@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ramverket Materialize</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <script src="js/jquery-3.7.0.min.js"></script>
+        <script src="js/materialize.min.js"></script>
+        <script src="js/myscript.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container center-align">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="Materialize.html"><b>Tabell</b></a></li>
+                <li><a href="#!"><b>Formulär</b></a></li>
+            </ul>
+            <nav>
+                <div class="nav-wrapper center-align">
+                    <ul class="left">
+                        <li><a href="index.html"><span class="col s12 m8 l4"><b> Startsidan </b></span></a></li>
+                        <li><a href="Bootstrap.html"><span class="col s12 m8 l4"><b> Bootstrap </b></span></a></li>
+                        <li><a class="dropdown-trigger materialize-red" href="#!" data-target="dropdown1"><span class="col s12 m8 l4"><b> Materialize <i class="material-icons right">arrow_drop_down</i></b></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h3>Ramverket Materialize</h3>
+            <div class="center-align">
+                <p>Ramverkets webbplats är: &nbsp; <a href="https://materializecss.com/" target="_blank"><b class="flow-text">Materialize</b></a></p>
+                <p>Ramverket Materialize har jag inte använt tidigare. Detta ramverk är helt nytt för mig.<br/>
+                    Nedan visar jag hur man skapar <a href="Materialize.html"><b class="big">en tabell</b></a> och ett formulär i ramverket Materialize.
+                </p>
+                <br/>
+                <div class="container center-align">
+                    <form class="col s8" id="kursformm" name="kursformm">
+                        <div class="input-field col s6">
+                            <input id="code" name="code" type="text" class="validate">
+                            <label for="code">Kurskod</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="subject" name="subject" type="text" class="validate">
+                            <label for="subject">Kursnamn</label>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" name="textarea1" class="materialize-textarea" rows="4"></textarea>
+                                <label for="textarea1"> &nbsp; Beskrivning</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h6>Kursen ingår i:</h6>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span> En Fristående Kurs </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" />
+                                    <span>Webbutveckling, 120 hp.</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Programvaruteknik, 180 hp.</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Datateknik, 180 hp.</span>
+                                </label>
+                            </p>                         
+                        </div>
+                        <div class="container center-align">
+                            <div class="container center-align">
+                                <h6>Ämnesområde:</h6>
+                                <br/>
+                                <select class="browser-default">
+                                    <option value="" disabled selected>Välj ämnesområde här:</option>
+                                    <option value="1">Programvaruteknik</option>
+                                    <option value="2">Datavetenskap</option>                                                                 
+                                    <option value="3">Datateknik</option>
+                                    <option value="4">Informatik</option>
+                                </select>                           
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row">
+                            <h6>Nivå:</h6>
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" checked />
+                                    <span>A</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio" />
+                                    <span>B</span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input class="with-gap" name="group1" type="radio"  />
+                                    <span>C</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="row">
+                            <button class="btn waves-effect waves-light" type="submit" name="action"><b> SKICKA </b>
+                                <i class="material-icons right">send</i>
+                            </button>
+                            <br/>
+                        </div>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

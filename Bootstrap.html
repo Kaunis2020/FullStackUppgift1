@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ramverket Bootstrap</title>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"  media="screen, projection"/>
+        <script src="js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container-md">
+            <nav class="container-sm navbar navbar-expand-lg fixed-top navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link text-primary"><span class="mx-3"><b> Startsidan </b></span></a></li>
+                            <li class="nav-item dropdown bg-white">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="mx-2"><b class="text-primary">Bootstrap</b></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><b class="text-primary bg-white"> Tabell</b></a></li>
+                                    <li><a class="dropdown-item" href="Bootstrap2.html"><b class="text-primary bg-white"> Formulär</b></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="Materialize.html" class="nav-link text-primary"><span class="mx-3"><b> Materialize </b></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br/>
+            <h1 class="text-center">Ramverket Bootstrap</h1>
+            <br/>
+            <div class="text-center">
+                <p>Ramverkets webbplats är: &nbsp; <a href="https://getbootstrap.com/" target="_blank"><b class="blockquote">Bootstrap</b></a></p>
+                <p>Ramverket Bootstrap är mycket välkänt för alla webbutvecklare. <br/>
+                    Bootstrap är ganska användarvänligt och enkelt att använda.<br/>
+                    Nedan visar jag hur man skapar en tabell och <a href="Bootstrap2.html" class="text-decoration-none"><b class="blockquote">ett formulär</b></a> i ramverket Bootstrap.
+                </p>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="table-responsive">
+                    <h2 class="text-center">Mina kurser i urval</h2>
+                    <br/>
+                    <table class="table table-hover">                      
+                        <thead>
+                            <tr>
+                                <th class="text-center">Kod</th>
+                                <th class="text-center">Kurs</th>
+                                <th>Ingår i</th>
+                                <th>Område</th>
+                                <th>Nivå</th>
+                                <th class="text-center">Beskrivning</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> DT071G </td>
+                                <td>Programmering i C#.NET</td>
+                                <td>Webbutveckling</td>
+                                <td>Datateknik</td>
+                                <td> A </td>
+                                <td>Programmering i språket C#</td>
+                            </tr>
+                            <tr>
+                                <td> DT191G </td>
+                                <td>Webbutveckling med .NET</td>
+                                <td>Webbutveckling</td>
+                                <td>Datateknik</td>
+                                <td> B </td>
+                                <td>Webbutveckling med ASP.NET Core</td>
+                            </tr>
+                            <tr>
+                                <td> DT093G </td>
+                                <td>Webbutveckling II</td>
+                                <td>Webbutveckling</td>
+                                <td>Datateknik</td>
+                                <td> B </td>
+                                <td>Fortsättningskurs i webbutveckling</td>
+                            </tr>
+                            <tr>
+                                <td> DT002G </td>
+                                <td>Tillämpad Datateknik</td>
+                                <td>Programvaruteknik</td>
+                                <td>Datateknik</td>
+                                <td> B </td>
+                                <td>Projektarbete i tillämpad datateknik</td>
+                            </tr>
+                            <tr>
+                                <td> DT063G </td>
+                                <td>Designmönster med C++</td>
+                                <td>Programvaruteknik</td>
+                                <td>Datateknik</td>
+                                <td> B </td>
+                                <td>Fördjupad programmering med C++</td>
+                            </tr>
+                            <tr>
+                                <td> DT062G </td>
+                                <td>Java för C++ programmerare</td>
+                                <td>Programvaruteknik</td>
+                                <td>Datateknik</td>
+                                <td> B </td>
+                                <td>Programmering i språket Java</td>
+                            </tr>
+                            <tr>
+                                <td> DT176G </td>
+                                <td>Reaktiv Programmering</td>
+                                <td>Programvaruteknik</td>
+                                <td>Datateknik</td>
+                                <td> C </td>
+                                <td>Avancerad programmering i Java</td>
+                            </tr>
+                            <tr>
+                                <td>DV023G</td>
+                                <td>Avancerad verksamhetsutveckling</td>
+                                <td>Fristående kurs</td>
+                                <td>Datavetenskap</td>
+                                <td> C </td>
+                                <td>Avancerad verksamhetsutveckling</td>
+                            </tr>
+                            <tr>
+                                <td> DV015G </td>
+                                <td>Examensarbete Datavetenskap</td>
+                                <td>Fristående kurs</td>
+                                <td>Datavetenskap</td>
+                                <td> C </td>
+                                <td>Examensarbete i Datavetenskap</td>
+                            </tr>
+                            <tr>
+                                <td> DT133G </td>
+                                <td>Självständigt arbete</td>
+                                <td>Programvaruteknik</td>
+                                <td>Datateknik</td>
+                                <td> C </td>
+                                <td>Examensarbete i Datateknik</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
